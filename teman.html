@@ -701,5 +701,39 @@ Connect</p>
   $('turn-message').textContent='Giliran Pemain 1. Lempar dadu saat siap.';
 })();
 </script>
- 
+
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
+
+<script>
+const temanFirebaseConfig = {
+  apiKey: "AIzaSyDgnwIjm3cQVuPy6HSWLxP_shkrHPuKamE",
+  authDomain: "teman-game-bkp.firebaseapp.com",
+  databaseURL: "https://teman-game-bkp-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "teman-game-bkp",
+  storageBucket: "teman-game-bkp.firebasestorage.app",
+  messagingSenderId: "1033410686858",
+  appId: "1:1033410686858:web:950dc8028ff63cddd1e273"
+};
+
+window.temanFirebaseReady = (async () => {
+  try {
+    if (!firebase.apps.length) {
+      firebase.initializeApp(temanFirebaseConfig);
+    }
+
+    await firebase.auth().signInAnonymously();
+    window.temanAuth = firebase.auth();
+    window.temanDb = firebase.database();
+
+    console.log("TEMAN Firebase siap.");
+    return true;
+  } catch (error) {
+    console.error("TEMAN Firebase error:", error);
+    return false;
+  }
+})();
+</script>
+
 </body></html>
