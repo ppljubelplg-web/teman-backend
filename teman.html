@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="id"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261016-04-d5e3a25","C":{"Abril Fatface":"YACgEZbkUVE,0","Albert Sans":"YAHO2HRfeh4,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Barlow":"YAFdJsyuOPM,1","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Cairo":"YAFdtXpDzlQ,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Sans":"YAHO2bKyaSQ,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Libre Caslon Display":"YAHO2XhLmt0,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Open Sans":"YAFdJt8dAY0,1","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Public Sans":"YAFdJj8NdaU,1","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","STIX Two Text":"YAHO2joycuk,0","Sarabun":"YAFdJssSnME,0","Schibsted Grotesk":"YAHO2sWydRk,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/05db820ba1544614.telemetry_sdk.js" integrity="sha512-a7JzkQDDcioSXpM61nxTfeRW7PcxWQy5+BrhyeTFmQFsXJ+Gncm0y50u7fTA7qOPegFnRgqCfa0mGUOK1yjDWQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TEMAN — Game Petualangan Keterampilan Sosial</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--coral:#ff765e;--turquoise:#31c6be;--cobalt:#4569e8;--yellow:#ffd45e;--cream:#fff5e7;--paper:#fffdf8;--navy:#28334a}
+    *{box-sizing:border-box}html,body{margin:0;min-width:320px}body{width:100%;font-family:"DM Sans",sans-serif;color:var(--navy)}
+    button,input,select,textarea{font:inherit}button{cursor:pointer}
+    :is(button,input,select,textarea):focus-visible{outline:3px solid var(--cobalt);outline-offset:3px}
+    .app-shell{width:100%;min-height:calc(100 * min(var(--vh,1vh),1vh));background:radial-gradient(circle at 8% 8%,#ffd45e99 0 7%,transparent 7.2%),radial-gradient(circle at 92% 20%,#31c6be38 0 11%,transparent 11.2%),linear-gradient(135deg,#4569e80c 1px,transparent 1px),var(--cream);background-size:auto,auto,30px 30px,auto}
+    .page-wrap{width:100%;max-width:1440px;margin:auto;padding:18px 24px 34px}.topbar{border-bottom:3px solid var(--navy);background:#fff5e7e8}
+    .brand-line{display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:16px}
+    .brand-word{font:900 clamp(2.8rem,5vw,5rem)/.85 Fraunces,serif;letter-spacing:-.11em;text-shadow:4px 4px var(--yellow)}
+    .brand-word span:nth-child(1),.brand-word span:nth-child(4){color:var(--cobalt)}.brand-word span:nth-child(2),.brand-word span:nth-child(5){color:var(--turquoise)}.brand-word span:nth-child(3){color:var(--coral)}
+    .tagline{padding:9px;border:3px solid var(--navy);border-radius:14px;transform:rotate(-5deg);box-shadow:5px 5px var(--navy);font:700 .66rem/1.35 "Space Mono",monospace;text-align:center;white-space:pre-line}
+    .subtitle-pill{display:inline-block;border:2px solid var(--navy);border-radius:999px;padding:7px 13px;box-shadow:3px 3px #28334a33}
+    .nav-scroll{display:flex;gap:8px;overflow-x:auto;padding:15px 0 6px;white-space:nowrap}
+    .nav-btn,.action{border:2px solid var(--navy);color:var(--navy);background:var(--paper);font-weight:800;box-shadow:3px 4px var(--navy);transition:.2s}
+    .nav-btn{border-radius:999px;padding:9px 14px;font-size:.8rem}.nav-btn.active,.nav-btn:hover{background:var(--yellow)}
+    .action{border-radius:14px;padding:.75rem .95rem;display:inline-flex;align-items:center;justify-content:center;gap:.45rem;font-size:.84rem}
+    .action:hover:not(:disabled){transform:translate(-1px,-3px);box-shadow:5px 7px var(--navy)}.action:disabled{opacity:.48;cursor:not-allowed}
+    .action-gold{background:var(--yellow)}.action-teal{background:var(--turquoise)}.action-red{background:var(--coral)}
+    .screen{display:none}.screen.active{display:block;animation:reveal .3s ease both}@keyframes reveal{from{opacity:0;transform:translateY(9px)}}
+    .panel{background:#fffdf8e8;border:3px solid var(--navy);border-radius:25px;box-shadow:0 10px #28334a24,0 20px 36px #28334a1f}
+    .heading{font-family:Fraunces,serif;font-weight:900;letter-spacing:-.055em}.eyebrow{font:700 .67rem "Space Mono",monospace;letter-spacing:.11em;text-transform:uppercase;color:var(--cobalt)}
+    .input-control{width:100%;border:2px solid var(--navy);border-radius:12px;padding:.72rem;background:var(--paper);color:var(--navy)}
+    .notice{background:linear-gradient(125deg,#ff765e2e,#31c6be33);border:2px solid var(--navy);border-left:6px solid var(--coral);border-radius:11px;padding:.75rem;font-size:.8rem;line-height:1.5}
+    .game-grid{display:grid;grid-template-columns:minmax(0,2.05fr) minmax(300px,1fr);gap:24px;margin-top:16px;align-items:start}
+    .board-card{padding:18px}.board-stage{position:relative;width:min(100%,760px);aspect-ratio:1;margin:auto;border:8px solid var(--navy);border-radius:50%;background:radial-gradient(circle,var(--cream) 0 20%,var(--yellow) 20.3% 21.8%,var(--turquoise) 22.1% 44.8%,var(--navy) 45.1% 46.2%,var(--cream) 46.5%);box-shadow:0 0 0 5px var(--yellow),0 0 0 9px var(--navy),0 23px 36px #28334a3d}
+    .board-stage:before{content:"";position:absolute;inset:5%;border:3px dashed #28334a70;border-radius:50%;animation:orbit 26s linear infinite}@keyframes orbit{to{transform:rotate(360deg)}}
+    .space{position:absolute;z-index:5;width:clamp(14px,3.8%,31px);aspect-ratio:1;transform:translate(-50%,-50%);display:grid;place-items:center;border:2px solid var(--navy);font-size:clamp(.48rem,.95vw,.67rem);font-weight:900;box-shadow:0 0 0 2px var(--cream),0 4px var(--navy);border-radius:50%;background:var(--turquoise)}
+    .space.mission{border-radius:9px;background:var(--coral)}.space.start-space{width:clamp(38px,7.2%,56px);border-radius:14px;font-size:.5rem}
+    .finish-zone{position:absolute;z-index:10;inset:40%;display:grid;place-items:center;text-align:center;border:4px solid var(--navy);border-radius:50%;background:radial-gradient(circle at 38% 28%,#fff5d1,#ffd45e 55%,#f59e42);box-shadow:0 0 0 5px var(--cream),0 0 0 10px var(--navy)}
+    .pawn{position:absolute;z-index:20;width:clamp(10px,2.2%,17px);height:clamp(13px,2.7%,20px);transform:translate(-50%,-50%);transition:left .18s,top .18s;filter:drop-shadow(0 3px 1px var(--navy))}
+    .pawn-head{position:absolute;left:20%;top:0;width:60%;aspect-ratio:1;background:inherit;border:1px solid var(--navy);border-radius:50%}.pawn-body{position:absolute;left:4%;bottom:0;width:92%;height:65%;background:inherit;border:1px solid var(--navy);clip-path:polygon(28% 0,72% 0,100% 100%,0 100%)}.pawn-number{position:absolute;top:30%;width:100%;text-align:center;font-size:.38rem;font-weight:900}.active-pawn{filter:drop-shadow(0 0 7px var(--yellow)) drop-shadow(0 3px 1px var(--navy))}
+    .control-stack{display:grid;gap:14px}.control-panel{padding:16px}.panel-title{font-size:1.03rem;font-weight:800;margin:0}
+    .turn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}.turn-chip{min-width:0;border:2px solid var(--navy);border-radius:10px;padding:6px 5px;font-size:.62rem;font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:var(--cream)}.turn-chip.active{outline:3px solid var(--yellow)}
+    .dice-box{display:grid;place-items:center;min-height:122px;margin:12px 0;border:2px solid var(--navy);border-radius:15px;background:radial-gradient(circle,#fffce9,var(--yellow))}
+    .dice{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);gap:8%;width:78px;height:78px;padding:12px;background:var(--cream);border:3px solid var(--navy);border-radius:17px;box-shadow:0 7px var(--navy)}.dice.rolling{animation:shake .14s linear infinite}@keyframes shake{50%{transform:rotate(8deg)}}.pip{border-radius:50%;background:var(--cobalt);opacity:0}.pip.show{opacity:1}
+    .score-row{display:flex;justify-content:space-between;gap:8px;border:2px solid #28334a38;border-radius:9px;padding:6px;margin-top:5px;font-size:.72rem;background:var(--row)}
+    .modal{position:fixed;z-index:100;inset:0;display:none;align-items:center;justify-content:center;padding:16px;background:#28334a70;backdrop-filter:blur(7px)}.modal.open{display:flex}
+    .dialog{width:min(790px,100%);max-height:calc(91 * min(var(--vh,1vh),1vh));overflow:auto;background:var(--cream);border:3px solid var(--navy);border-radius:24px;box-shadow:0 12px var(--navy),0 25px 75px #28334a52}
+    .dialog-head{position:sticky;top:0;z-index:2;background:linear-gradient(105deg,var(--turquoise),var(--yellow));padding:16px 20px;display:flex;justify-content:space-between;gap:12px;border-bottom:3px solid var(--navy)}.dialog-body{padding:20px}.close-modal{background:var(--coral);border:2px solid var(--navy);border-radius:10px;width:36px;height:36px;font-size:1.3rem}
+    .wheel-wrap{position:relative;width:min(280px,82vw);aspect-ratio:1;margin:16px auto}.wheel{position:relative;width:100%;height:100%;border:7px solid var(--navy);border-radius:50%;background:conic-gradient(var(--yellow) 0 60deg,var(--coral) 60deg 120deg,var(--turquoise) 120deg 180deg,var(--cobalt) 180deg 240deg,var(--yellow) 240deg 300deg,var(--coral) 300deg);transition:transform 4.5s cubic-bezier(.12,.72,.12,1);box-shadow:0 0 0 5px var(--cream),0 0 0 9px var(--navy)}
+    .wheel-label{position:absolute;width:31%;text-align:center;font-size:clamp(8px,2.5vw,11px);font-weight:900;line-height:1.05;overflow-wrap:anywhere}.wheel-label:nth-child(1){left:49%;top:23%}.wheel-label:nth-child(2){left:63%;top:47%}.wheel-label:nth-child(3){left:49%;top:72%}.wheel-label:nth-child(4){left:20%;top:72%}.wheel-label:nth-child(5){left:6%;top:47%}.wheel-label:nth-child(6){left:20%;top:23%}
+    .wheel:after{content:"TEMAN\A CONNECT";white-space:pre;position:absolute;inset:35%;display:grid;place-content:center;text-align:center;background:var(--cream);border:4px solid var(--navy);border-radius:50%;font-size:.64rem;font-weight:900}
+    .wheel-pointer{position:absolute;z-index:3;left:50%;top:-5px;transform:translateX(-50%);border-left:15px solid transparent;border-right:15px solid transparent;border-top:28px solid var(--coral)}
+    .option{width:100%;padding:12px;text-align:left;border:2px solid var(--navy);border-radius:12px;background:var(--paper)}.option:hover{background:#d8f8f5}.selected-correct{background:#bdf2e9}.selected-wrong{background:#ffc9bf}
+    .diagnostic-list{display:grid;gap:8px;margin-top:12px}.diagnostic-row{border:1px solid #28334a55;border-radius:10px;background:#fffdf8;padding:10px;overflow-wrap:anywhere}.diagnostic-row strong{display:block;font-size:.82rem}.diagnostic-row p{margin:4px 0 0;font-size:.76rem}.diagnostic-state{font:700 .7rem "Space Mono",monospace}.diagnostic-state[data-state="BERHASIL"]{color:#176d53}.diagnostic-state[data-state="GAGAL"]{color:#ae342d}.diagnostic-state[data-state="BELUM DIUJI"]{color:#49536b}
+    @media(max-width:900px){.game-grid{grid-template-columns:1fr}.control-stack{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:620px){.page-wrap{padding:13px 12px 25px}.brand{gap:8px}.tagline{display:none}.subtitle-pill{font-size:.62rem}.control-stack{grid-template-columns:1fr}.board-card{padding:12px}.board-stage{border-width:5px}}
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/570d53629f0b998d.data_sdk.js" type="text/javascript" integrity="sha512-JEN39+V+Nvv9ZZOVS8vNk1iA9ErZJHTdgOw9KzPuMiK7m0I+KPEr/wmTnCFIQVsDjCZgJWfGnFi1IQh2Io2qyA=="></script>
+  <script src="/_sdk/7825871aa95c503d.editing_sdk.js" type="text/javascript" integrity="sha512-2lFhP7fVLyI/xh1XVD1wGvcEUDBQxBW40AsWL6PQ5RZg0/hxM41hBHE/wQF1zqhE8vvzASF/osL1pnlucLWnaQ=="></script>
+  <script src="/_sdk/f195026a424c1f85.resizing_sdk.js" type="text/javascript" integrity="sha512-8On4Z+AXh1abEzZJ9Dbn9wOvFg+k1LsAaAzKGQ7LlfgXajZ9xEmZaZ1QVzv0AWhCZtCsEpWSOG9DgLri06TS7A=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(255, 245, 231);">
+  <div class="app-shell">
+   <header class="topbar">
+    <div class="page-wrap">
+     <div class="brand-line">
+      <div class="brand">
+       <p data-template-id="brand-tagline" class="canva-text tagline" style="background: rgb(255, 212, 94); color: rgb(40, 51, 74); font-weight: 700; font-style: normal; font-size: 16px;">Spin
+Choose
+Connect</p>
+       <div>
+        <div class="brand-word" aria-label="TEMAN">
+         <span>T</span><span>E</span><span>M</span><span>A</span><span>N</span>
+        </div>
+        <div data-template-id="brand-subtitle" class="canva-text subtitle-pill mt-2" style="background: rgb(49, 198, 190); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Game Petualangan Keterampilan Sosial</div>
+       </div>
+      </div>
+      <div class="text-right">
+       <p data-template-id="active-label" class="canva-text text-xs font-bold" style="color: rgb(69, 105, 232); font-weight: 700; font-style: normal; font-size: 16px;">PEMAIN AKTIF</p>
+       <p id="active-player" class="font-extrabold">Pemain 1</p>
+      </div>
+     </div>
+     <nav class="nav-scroll" aria-label="Navigasi"><button class="nav-btn active" data-go="home" type="button">Beranda</button><button class="nav-btn" data-go="board" type="button">Papan Permainan</button><button class="nav-btn" data-modal="wheel-modal" type="button">Social Skill Wheel</button><button class="nav-btn" data-modal="score-modal" type="button">Papan Skor</button><button class="nav-btn" data-modal="final-modal" type="button">Tantangan Akhir</button><button class="nav-btn" data-modal="reflection-modal" type="button">Refleksi 4P</button>
+     </nav>
+    </div>
+   </header>
+   <main class="page-wrap pt-3">
+    <section id="home" class="screen active">
+     <div class="grid lg:grid-cols-[1.1fr_.9fr] gap-5">
+      <section class="panel p-6 md:p-9">
+       <p data-template-id="home-eyebrow" class="canva-text eyebrow" style="color: rgb(69, 105, 232); font-weight: 800; font-style: normal; font-size: 16px;">Ruang bermain interaktif</p>
+       <h1 data-template-id="home-title" class="canva-text heading mt-2" style="color: rgb(40, 51, 74); font-weight: 900; font-style: normal; font-size: 44px;">TEMAN</h1>
+       <p data-template-id="home-description" class="canva-text mt-4 max-w-xl leading-relaxed" style="color: rgb(40, 51, 74); font-weight: 400; font-style: normal; font-size: 16px;">Latih keterampilan sosial melalui permainan, percakapan, simulasi singkat, dan refleksi yang aman serta saling menghargai.</p>
+       <div class="flex flex-wrap gap-3 mt-6">
+        <button data-template-id="mode-local-button" id="mode-local" class="canva-button action action-teal" type="button" style="background: rgb(49, 198, 190); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Main Satu Perangkat</button><button data-template-id="mode-online-button" id="mode-online" class="canva-button action action-gold" type="button" style="background: rgb(255, 212, 94); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Cek Ketersediaan Multiplayer</button>
+       </div>
+       <p id="mode-message" class="font-bold text-sm mt-4" aria-live="polite">Mode satu perangkat aktif.</p>
+       <div class="flex flex-wrap gap-3 mt-6">
+        <button data-template-id="home-play-button" class="canva-button action action-teal" data-go="board" type="button" style="background: rgb(49, 198, 190); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Mulai Bermain</button><button data-template-id="home-rules-button" class="canva-button action" data-modal="rules-modal" type="button" style="background: rgb(255, 253, 248); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Cara Bermain</button><button data-template-id="home-reset-button" class="canva-button action action-red" id="reset-open" type="button" style="background: rgb(255, 118, 94); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Reset</button>
+       </div>
+      </section>
+      <form id="setup-form" class="panel p-6">
+       <p data-template-id="setup-eyebrow" class="canva-text eyebrow" style="color: rgb(69, 105, 232); font-weight: 800; font-style: normal; font-size: 16px;">Pengaturan pemain</p>
+       <h2 data-template-id="setup-title" class="canva-text heading mt-2" style="color: rgb(40, 51, 74); font-weight: 900; font-style: normal; font-size: 24px;">Siapkan sesi permainan</h2><label data-template-id="count-label" class="canva-text block font-bold mt-5" for="player-count" style="color: rgb(40, 51, 74); font-weight: 700; font-style: normal; font-size: 16px;">Jumlah pemain (2–6)</label><select id="player-count" class="input-control mt-2"></select>
+       <h3 data-template-id="names-heading" class="canva-text heading mt-5" style="color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 19px;">Nama panggilan pemain</h3>
+       <div id="name-fields" class="grid sm:grid-cols-2 gap-3 mt-3"></div><button data-template-id="setup-save-button" class="canva-button action action-teal w-full mt-5" type="submit" style="background: rgb(49, 198, 190); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Simpan &amp; Mulai</button>
+       <p id="setup-message" class="text-sm font-bold mt-3" aria-live="polite"></p>
+      </form>
+      <section id="online-lobby" class="panel p-6 hidden" aria-labelledby="lobby-heading">
+       <p data-template-id="lobby-eyebrow" class="canva-text eyebrow" style="color: rgb(69, 105, 232); font-weight: 800; font-style: normal; font-size: 16px;">Main bersama dari perangkat berbeda</p>
+       <h2 id="lobby-heading" data-template-id="lobby-title" class="canva-text heading mt-2" style="color: rgb(40, 51, 74); font-weight: 900; font-style: normal; font-size: 24px;">Multiplayer lintas perangkat belum tersedia</h2>
+       <p data-template-id="lobby-help" class="canva-text text-sm mt-3" style="color: rgb(40, 51, 74); font-weight: 400; font-style: normal; font-size: 16px;">Audit source aktif: SDK Firebase, firebaseConfig/databaseURL, Auth, Realtime Database, schema/path room, createRoom, joinRoom, listener, dan aturan akses belum tersedia atau belum dapat diverifikasi. Tidak ada ruang palsu atau permintaan database; mode satu perangkat tetap tersedia.</p><label data-template-id="online-name-label" class="canva-text block font-bold mt-5" for="online-name" style="color: rgb(40, 51, 74); font-weight: 700; font-style: normal; font-size: 16px;">Nama panggilan Anda</label><input id="online-name" class="input-control mt-2" maxlength="24" autocomplete="nickname"> <button id="create-room" data-template-id="create-room-button" class="canva-button action action-teal w-full mt-4" type="button" style="background: rgb(49, 198, 190); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Buat Ruang Baru</button>
+       <form id="join-form" class="mt-5">
+        <label data-template-id="room-code-label" class="canva-text block font-bold" for="room-code" style="color: rgb(40, 51, 74); font-weight: 700; font-style: normal; font-size: 16px;">Kode ruang teman</label><input id="room-code" class="input-control mt-2 uppercase" maxlength="8" autocomplete="off" spellcheck="false"><button id="join-room" data-template-id="join-room-button" class="canva-button action action-gold w-full mt-3" type="submit" style="background: rgb(255, 212, 94); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Gabung Ruang</button>
+       </form>
+       <p id="lobby-error" class="text-sm font-bold mt-4" role="alert"></p>
+       <section class="notice mt-5" aria-labelledby="test-heading">
+        <h3 id="test-heading" data-template-id="test-heading-label" class="canva-text font-extrabold" style="color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 19px;">DIAGNOSTIK MULTIPLAYER</h3><button id="run-diagnostics" data-template-id="diagnostic-run-button" class="canva-button action action-gold mt-3" type="button" style="background: rgb(255, 212, 94); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Jalankan Semua Tes</button>
+        <div class="grid sm:grid-cols-2 gap-2 mt-3" aria-label="Tes diagnostik individual">
+         <button id="test-config" data-template-id="diagnostic-config-button" class="canva-button action" type="button" style="background: rgb(255, 253, 248); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Tes databaseURL</button><button id="test-auth" data-template-id="diagnostic-auth-button" class="canva-button action" type="button" style="background: rgb(255, 253, 248); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Tes Anonymous Authentication</button><button id="test-database" data-template-id="diagnostic-database-button" class="canva-button action" type="button" style="background: rgb(255, 253, 248); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Tes Realtime Database</button><button id="test-read" data-template-id="diagnostic-read-button" class="canva-button action" type="button" style="background: rgb(255, 253, 248); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Tes baca database</button><button id="test-room" data-template-id="diagnostic-room-button" class="canva-button action" type="button" style="background: rgb(255, 253, 248); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Tes create-room/read-back</button>
+        </div>
+        <p id="diagnostic-time" class="text-sm font-bold mt-3" aria-live="polite">Waktu tes: BELUM DIUJI</p>
+        <p id="diagnostic-connection" class="text-sm mt-1">Koneksi database: BELUM DIUJI</p>
+        <p id="diagnostic-auth" class="text-sm mt-1">Autentikasi: BELUM DIUJI</p>
+        <div id="diagnostic-results" class="diagnostic-list" aria-live="polite"></div>
+        <p data-template-id="diagnostic-summary" class="canva-text font-extrabold mt-4" style="color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Multiplayer belum dinyatakan aktif. Create-room dan sinkronisasi lintas perangkat belum terbukti.</p>
+        <p data-template-id="diagnostic-limit" class="canva-text mt-2" style="color: rgb(40, 51, 74); font-weight: 400; font-style: normal; font-size: 16px;">Hasil di atas berasal dari perangkat ini hanya setelah tombol ditekan. Editor tidak membuktikan akses Firebase, sinkronisasi dua perangkat, atau isi Security Rules.</p>
+        <p data-template-id="diagnostic-next-step" class="canva-text mt-2" style="color: rgb(40, 51, 74); font-weight: 700; font-style: normal; font-size: 16px;">Langkah berikutnya: jalankan diagnostik pada link game yang dipublikasikan dari dua perangkat, lalu bandingkan hasil create/join/listener.</p>
+       </section>
+      </section>
+     </div>
+    </section>
+    <section id="board" class="screen">
+     <div class="flex justify-between gap-4 items-end">
+      <div>
+       <p data-template-id="board-eyebrow" class="canva-text eyebrow" style="color: rgb(69, 105, 232); font-weight: 800; font-style: normal; font-size: 16px;">Papan permainan aktif</p>
+       <h1 data-template-id="board-title" class="canva-text heading mt-1" style="color: rgb(40, 51, 74); font-weight: 900; font-style: normal; font-size: 32px;">Papan Permainan TEMAN</h1>
+      </div><button data-template-id="board-home-button" class="canva-button action" data-go="home" type="button" style="background: rgb(255, 253, 248); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Beranda</button>
+     </div>
+     <div class="game-grid">
+      <section class="panel board-card">
+       <div class="text-center mb-3">
+        <h2 data-template-id="board-logo" class="canva-text heading" style="color: rgb(40, 51, 74); font-weight: 900; font-style: normal; font-size: 24px;">TEMAN</h2>
+        <p data-template-id="board-subtitle" class="canva-text text-sm font-bold" style="color: rgb(69, 105, 232); font-weight: 700; font-style: normal; font-size: 16px;">Spin • Choose • Connect</p>
+       </div>
+       <div id="game-board" class="board-stage" aria-label="Papan permainan TEMAN">
+        <div data-template-id="finish-shared" class="canva-panel finish-zone" style="background: radial-gradient(rgb(255, 248, 199), rgb(255, 212, 94), rgb(255, 118, 94));">
+         <div>
+          <span aria-hidden="true">✦ ☻ ✦</span><br><strong data-template-id="finish-title" class="canva-text" style="color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 24px;">FINISH</strong>
+         </div>
+        </div>
+       </div>
+       <p id="board-message" class="text-center text-sm font-bold mt-4" aria-live="polite"></p>
+       <div data-template-id="board-note" class="canva-banner notice mt-4" style="background: linear-gradient(125deg, rgba(255, 118, 94, 0.18), rgba(49, 198, 190, 0.2)); color: rgb(40, 51, 74); font-weight: 600; font-style: normal; font-size: 16px;">Petak misi membuka roda dan kartu. Tidak ada pengurangan poin, dan setiap peserta boleh mendapat petunjuk serta kesempatan mencoba kembali.</div>
+      </section>
+      <aside class="control-stack" aria-label="Kontrol permainan">
+       <section class="panel control-panel">
+        <h2 data-template-id="turn-heading" class="canva-text panel-title" style="color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 24px;">Urutan Giliran</h2>
+        <div id="turn-order" class="turn-grid"></div>
+        <p id="turn-message" class="text-xs font-bold mt-3" aria-live="polite"></p><button data-template-id="skip-button" id="skip-button" class="canva-button action w-full mt-3" type="button" style="background: rgb(255, 253, 248); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Lewati Misi / Giliran</button>
+       </section>
+       <section class="panel control-panel">
+        <h2 data-template-id="dice-heading" class="canva-text panel-title" style="color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 24px;">Dadu Digital</h2>
+        <div class="dice-box">
+         <div id="dice-result" class="dice" role="img" aria-label="Dadu">
+          <span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span>
+         </div>
+        </div>
+        <div class="grid gap-2">
+         <button data-template-id="roll-button" id="roll-button" class="canva-button action action-gold" type="button" style="background: rgb(255, 212, 94); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Lempar Dadu</button><button data-template-id="move-button" id="move-button" class="canva-button action action-teal" type="button" style="background: rgb(49, 198, 190); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Gerakkan Pion</button>
+        </div>
+       </section>
+       <section class="panel control-panel">
+        <h2 data-template-id="score-heading-label" class="canva-text panel-title" style="color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 24px;">Papan Skor</h2>
+        <div id="scoreboard"></div>
+        <div data-template-id="score-legend" class="canva-text text-xs font-bold mt-3 whitespace-pre-line" style="color: rgb(40, 51, 74); font-weight: 700; font-style: normal; font-size: 16px;">★ Coral: Petak Tantangan (36)
+● Turquoise: Petak Biasa (18)</div>
+       </section>
+      </aside>
+     </div>
+    </section>
+   </main>
+  </div>
+  <div id="wheel-modal" class="modal" aria-hidden="true">
+   <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="wheel-title">
+    <header class="dialog-head">
+     <div>
+      <h2 id="wheel-title" data-template-id="wheel-title-text" class="canva-text font-extrabold" style="color: rgb(40, 51, 74); font-weight: 900; font-style: normal; font-size: 24px;">Social Skill Wheel</h2>
+      <p data-template-id="wheel-help" class="canva-text text-sm mt-1" style="color: rgb(40, 51, 74); font-weight: 400; font-style: normal; font-size: 16px;">Putar roda untuk menentukan kategori misi sosial.</p>
+     </div><button class="close-modal" data-close="wheel-modal" aria-label="Tutup" type="button">×</button>
+    </header>
+    <div class="dialog-body text-center">
+     <p id="mission-phase-label" class="font-bold text-sm"></p>
+     <div class="wheel-wrap">
+      <span class="wheel-pointer"></span>
+      <div id="skill-wheel" class="wheel" aria-label="Roda kategori keterampilan sosial"></div>
+     </div>
+     <p id="wheel-result" class="font-extrabold mt-4"></p><button data-template-id="spin-button" id="spin-button" class="canva-button action action-teal mt-4" type="button" style="background: rgb(49, 198, 190); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Putar Roda</button>
+     <div id="card-type-choices" class="hidden flex-wrap justify-center gap-3 mt-4">
+      <button id="choose-mc" class="action action-gold" type="button">Pilihan Ganda</button><button id="choose-tf" class="action" type="button">Benar/Salah</button><button id="choose-challenge" class="action action-teal" type="button">Tantangan</button>
+     </div>
+    </div>
+   </section>
+  </div>
+  <div id="mc-modal" class="modal" aria-hidden="true">
+   <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="mc-title">
+    <header class="dialog-head">
+     <div>
+      <h2 id="mc-title" data-template-id="mc-title-text" class="canva-text font-extrabold" style="color: rgb(40, 51, 74); font-weight: 900; font-style: normal; font-size: 24px;">Kartu Pilihan Ganda</h2>
+      <p id="mc-category"></p>
+     </div><button class="close-modal" data-close="mc-modal" aria-label="Tutup" type="button">×</button>
+    </header>
+    <div class="dialog-body">
+     <p id="mc-question" class="font-bold text-lg"></p>
+     <div id="mc-options" class="grid gap-3 mt-5"></div>
+     <p id="mc-feedback" class="hidden notice mt-5"></p><button data-template-id="mc-continue-button" id="mc-continue" class="canva-button action action-teal mt-5 hidden" type="button" style="background: rgb(49, 198, 190); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Selesaikan Giliran</button>
+    </div>
+   </section>
+  </div>
+  <div id="tf-modal" class="modal" aria-hidden="true">
+   <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="tf-title">
+    <header class="dialog-head">
+     <h2 id="tf-title" data-template-id="tf-title-text" class="canva-text font-extrabold" style="color: rgb(40, 51, 74); font-weight: 900; font-style: normal; font-size: 24px;">Kartu Benar/Salah</h2><button class="close-modal" data-close="tf-modal" aria-label="Tutup" type="button">×</button>
+    </header>
+    <div class="dialog-body">
+     <p id="tf-statement" class="font-bold text-lg"></p>
+     <div class="flex gap-3 mt-5">
+      <button id="tf-true" class="action action-teal" type="button">Benar</button><button id="tf-false" class="action" type="button">Salah</button>
+     </div>
+     <p id="tf-feedback" class="notice mt-5 hidden"></p><button id="tf-finish" class="action action-teal mt-5 hidden" type="button">Selesaikan Giliran</button>
+    </div>
+   </section>
+  </div>
+  <div id="challenge-modal" class="modal" aria-hidden="true">
+   <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="challenge-title">
+    <header class="dialog-head">
+     <div>
+      <h2 id="challenge-title" data-template-id="challenge-title-text" class="canva-text font-extrabold" style="color: rgb(40, 51, 74); font-weight: 900; font-style: normal; font-size: 24px;">Kartu Tantangan</h2>
+      <p id="challenge-category"></p>
+     </div><button class="close-modal" data-close="challenge-modal" aria-label="Tutup" type="button">×</button>
+    </header>
+    <div class="dialog-body">
+     <p id="challenge-text" class="font-bold text-lg"></p>
+     <div data-template-id="challenge-safety" class="canva-banner notice mt-5" style="background: linear-gradient(125deg, rgba(255, 118, 94, 0.18), rgba(49, 198, 190, 0.2)); color: rgb(40, 51, 74); font-weight: 600; font-style: normal; font-size: 16px;">Peserta boleh simulasi bersama fasilitator. Tidak boleh dipermalukan, diejek, dipaksa membuka rahasia, atau dipaksa tampil jika belum nyaman.</div>
+     <p id="challenge-status" class="mt-4 font-bold"></p>
+     <div class="flex flex-wrap gap-3 mt-5">
+      <button data-template-id="challenge-success-button" id="challenge-success" class="canva-button action action-teal" type="button" style="background: rgb(49, 198, 190); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Usaha &amp; perilaku sesuai +2</button><button data-template-id="challenge-retry-button" id="challenge-retry" class="canva-button action" type="button" style="background: rgb(255, 253, 248); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Belum berhasil, coba lagi</button><button id="challenge-finish" class="action action-teal hidden" type="button">Selesaikan Giliran</button>
+     </div>
+    </div>
+   </section>
+  </div>
+  <div id="score-modal" class="modal" aria-hidden="true">
+   <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="score-modal-title">
+    <header class="dialog-head">
+     <h2 id="score-modal-title" data-template-id="score-modal-title-text" class="canva-text font-extrabold" style="color: rgb(40, 51, 74); font-weight: 900; font-style: normal; font-size: 24px;">Papan Skor Lengkap</h2><button class="close-modal" data-close="score-modal" aria-label="Tutup" type="button">×</button>
+    </header>
+    <div class="dialog-body" id="full-scoreboard"></div>
+   </section>
+  </div>
+  <div id="final-modal" class="modal" aria-hidden="true">
+   <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="final-title">
+    <header class="dialog-head">
+     <h2 id="final-title" data-template-id="final-title-text" class="canva-text font-extrabold" style="color: rgb(40, 51, 74); font-weight: 900; font-style: normal; font-size: 24px;">FINISH BERSAMA — Tantangan Akhir</h2><button class="close-modal" data-close="final-modal" aria-label="Tutup" type="button">×</button>
+    </header>
+    <div class="dialog-body">
+     <p data-template-id="final-challenge" class="canva-text font-bold text-lg" style="color: rgb(40, 51, 74); font-weight: 700; font-style: normal; font-size: 16px;">Kamu ingin bergabung dengan sekelompok teman yang sedang berdiskusi di kelas. Peragakan cara meminta izin bergabung dan memulai percakapan dengan sopan.</p><label class="block font-bold mt-5" for="final-player">Pilih peserta</label><select id="final-player" class="input-control mt-2"></select><button data-template-id="final-complete-button" id="final-complete" class="canva-button action action-teal mt-4" type="button" style="background: rgb(49, 198, 190); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Tandai Tantangan Selesai</button>
+     <p id="final-message" class="font-bold mt-3" aria-live="polite"></p>
+    </div>
+   </section>
+  </div>
+  <div id="reflection-modal" class="modal" aria-hidden="true">
+   <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="reflection-title">
+    <header class="dialog-head">
+     <div>
+      <h2 id="reflection-title" data-template-id="reflection-title-text" class="canva-text font-extrabold" style="color: rgb(40, 51, 74); font-weight: 900; font-style: normal; font-size: 24px;">Refleksi 4P</h2>
+      <p data-template-id="reflection-help" class="canva-text text-sm" style="color: rgb(40, 51, 74); font-weight: 400; font-style: normal; font-size: 16px;">Peserta boleh mengisi secara pribadi tanpa membagikan semua jawaban.</p>
+     </div><button class="close-modal" data-close="reflection-modal" aria-label="Tutup" type="button">×</button>
+    </header>
+    <form id="reflection-form" class="dialog-body">
+     <div class="grid sm:grid-cols-2 gap-4">
+      <div>
+       <label data-template-id="feel-label" class="canva-text font-bold" for="feel" style="color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">PERASAAN — Bagaimana perasaanmu selama permainan?</label><textarea id="feel" class="input-control mt-2" rows="4"></textarea>
+      </div>
+      <div>
+       <label data-template-id="learn-label" class="canva-text font-bold" for="learn" style="color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">PEMBELAJARAN — Apa yang kamu pelajari?</label><textarea id="learn" class="input-control mt-2" rows="4"></textarea>
+      </div>
+      <div>
+       <label data-template-id="change-label" class="canva-text font-bold" for="change" style="color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">PERUBAHAN — Keterampilan apa yang ingin kamu latih?</label><textarea id="change" class="input-control mt-2" rows="4"></textarea>
+      </div>
+      <div>
+       <label data-template-id="apply-label" class="canva-text font-bold" for="apply" style="color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">PENERAPAN — Apa langkah kecilmu berikutnya?</label><textarea id="apply" class="input-control mt-2" rows="4"></textarea>
+      </div>
+     </div><button data-template-id="reflection-save-button" class="canva-button action action-teal mt-5" type="submit" style="background: rgb(49, 198, 190); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Simpan Refleksi Sesi</button>
+     <p id="reflection-message" class="text-sm font-bold mt-3" aria-live="polite"></p>
+    </form>
+   </section>
+  </div>
+  <div id="rules-modal" class="modal" aria-hidden="true">
+   <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="rules-title">
+    <header class="dialog-head">
+     <h2 id="rules-title" data-template-id="rules-title-text" class="canva-text font-extrabold" style="color: rgb(40, 51, 74); font-weight: 900; font-style: normal; font-size: 24px;">Cara Bermain</h2><button class="close-modal" data-close="rules-modal" aria-label="Tutup" type="button">×</button>
+    </header>
+    <div class="dialog-body">
+     <ol class="list-decimal pl-5 space-y-3">
+      <li>Pilih pemain dan nama panggilan.</li>
+      <li>Lempar dadu, lalu gerakkan pion.</li>
+      <li>Petak coral membuka misi sosial.</li>
+      <li>Kumpulkan poin dari usaha dan jawaban tepat.</li>
+      <li>Tutup permainan dengan tantangan akhir dan refleksi 4P.</li>
+     </ol>
+     <p class="notice mt-5">Mode satu perangkat mendukung 2–6 pemain. Multiplayer lintas perangkat belum tersedia tanpa backend yang terkonfigurasi dan terverifikasi.</p>
+    </div>
+   </section>
+  </div>
+  <div id="reset-modal" class="modal" aria-hidden="true">
+   <section class="dialog max-w-lg" role="dialog" aria-modal="true" aria-labelledby="reset-title">
+    <header class="dialog-head">
+     <h2 id="reset-title" data-template-id="reset-title-text" class="canva-text font-extrabold" style="color: rgb(40, 51, 74); font-weight: 900; font-style: normal; font-size: 24px;">Reset permainan?</h2>
+    </header>
+    <div class="dialog-body">
+     <p data-template-id="reset-text" class="canva-text" style="color: rgb(40, 51, 74); font-weight: 400; font-style: normal; font-size: 16px;">Tindakan ini mengatur ulang nama pemain, posisi pion, giliran, skor, tantangan, dan refleksi sesi satu perangkat.</p>
+     <div class="flex gap-3 mt-5">
+      <button data-template-id="reset-confirm-button" id="reset-confirm" class="canva-button action action-red" type="button" style="background: rgb(255, 118, 94); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Ya, Reset Permainan</button><button data-template-id="reset-cancel-button" class="canva-button action" data-close="reset-modal" type="button" style="background: rgb(255, 253, 248); color: rgb(40, 51, 74); font-weight: 800; font-style: normal; font-size: 16px;">Batal</button>
+     </div>
+    </div>
+   </section>
+  </div>
+  <script>
+(() => {
+  const $=id=>document.getElementById(id);
+  const COLORS=['#FF8075','#39BFB5','#5E7FF2','#62B887','#9B70E8','#E6B83F'];
+  const START_ANGLES=[-120,-60,0,60,120,180],TOTAL_TRACK=54;
+  const categories=['MENYAPA','BERBICARA','BERGABUNG','MENDENGAR','MERESPONS','BERANI'];
+  const cardLabels=['B/S','PG','T'];
+  const challengeBank={
+    MENYAPA:'Praktikkan cara menyapa teman sekelas yang belum terlalu akrab denganmu.',
+    BERBICARA:'Praktikkan cara memulai percakapan ringan tentang kegiatan sekolah.',
+    BERGABUNG:'Peragakan cara meminta izin untuk bergabung dengan kelompok teman yang sedang berdiskusi.',
+    MENDENGAR:'Dengarkan cerita teman selama satu menit tanpa memotong, lalu sampaikan inti ceritanya.',
+    MERESPONS:'Peragakan cara memberi tanggapan sopan ketika teman memiliki pendapat berbeda.',
+    BERANI:'Pilih satu kalimat pembuka percakapan yang ingin kamu coba, lalu praktikkan.'
+  };
+  const mcBank=[
+    {category:'MENYAPA',question:'Kamu melihat teman sekelas yang belum terlalu akrab. Apa yang paling tepat dilakukan?',options:['Menunggu saja tanpa menyapa.','Tersenyum dan menyapanya dengan sopan.','Menghindar agar tidak perlu berinteraksi.','Menanyakan hal pribadi yang sensitif.'],key:'B',explanation:'Sapaan sopan adalah langkah awal interaksi yang aman.'},
+    {category:'BERBICARA',question:'Kamu ingin memulai percakapan dengan teman baru. Cara tepat adalah:',options:['Menanyakan hal ringan sesuai situasi.','Memaksa teman menjawab pertanyaan.','Membicarakan kekurangan teman lain.','Langsung pergi tanpa memberi kesempatan.'],key:'A',explanation:'Pertanyaan ringan membantu percakapan terasa nyaman.'},
+    {category:'BERGABUNG',question:'Kamu ingin ikut kelompok yang berdiskusi. Apa sebaiknya dilakukan?',options:['Mengambil alih pembicaraan kelompok.','Memotong pembicaraan.','Menunggu tanpa bertanya.','Meminta izin bergabung dengan sopan.'],key:'D',explanation:'Meminta izin menunjukkan penghargaan.'},
+    {category:'MENDENGAR',question:'Apa yang menunjukkan kamu mendengarkan dengan baik?',options:['Memeriksa ponsel.','Memotong cerita.','Memperhatikan dan memberi kesempatan berbicara.','Mengalihkan pembicaraan.'],key:'C',explanation:'Perhatian membantu memahami cerita teman.'},
+    {category:'MERESPONS',question:'Teman memiliki pendapat berbeda. Apa respons tepat?',options:['Menganggap pendapatnya tidak berguna.','Mendengarkan dan menyampaikan pendapat dengan sopan.','Mengakhiri pertemanan.','Mengejek teman.'],key:'B',explanation:'Perbedaan pendapat dapat dibahas dengan sopan.'},
+    {category:'BERANI',question:'Kamu gugup menyapa teman baru. Langkah yang dapat dicoba?',options:['Tidak pernah menyapa.','Menunggu sampai gugup hilang.','Memulai dengan senyum atau sapaan sederhana.','Memaksa diri.'],key:'C',explanation:'Langkah kecil dapat menjadi awal latihan.'}
+  ];
+  const tfBank=[
+    {category:'MENYAPA',statement:'Menyapa teman dengan ramah dapat menjadi langkah awal untuk membangun pertemanan.',key:true,explanation:'Sapaan sederhana membuka kesempatan untuk berinteraksi.'},
+    {category:'BERBICARA',statement:'Agar percakapan berjalan baik, kita harus selalu membicarakan diri sendiri.',key:false,explanation:'Percakapan yang baik memberi kesempatan kepada semua pihak.'},
+    {category:'BERGABUNG',statement:'Meminta izin dengan sopan sebelum bergabung dalam kegiatan kelompok merupakan sikap yang baik.',key:true,explanation:'Meminta izin menunjukkan sikap menghargai orang lain.'},
+    {category:'MENDENGAR',statement:'Saat teman bercerita, melihat ke arah pembicara dan tidak memainkan ponsel dapat menunjukkan perhatian.',key:true,explanation:'Sikap hadir membantu teman merasa didengarkan.'},
+    {category:'MERESPONS',statement:'Ketika tidak setuju, kita boleh mengejek pendapat teman agar ia mengubah pikirannya.',key:false,explanation:'Ketidaksetujuan perlu disampaikan dengan tetap menghargai.'},
+    {category:'BERANI',statement:'Keterampilan memulai percakapan dapat dilatih sedikit demi sedikit.',key:true,explanation:'Latihan sederhana dapat membantu membangun keberanian.'}
+  ];
+  const normalLocals=[[1,4,7],[0,3,6],[2,5,8],[1,4,7],[0,3,6],[2,5,8]];
+  const trackCells=Array.from({length:6},(_,s)=>Array.from({length:9},(_,l)=>({index:s*9+l,type:normalLocals[s].includes(l)?'normal':'challenge',angle:START_ANGLES[s]+(l+1)*6}))).flat();
+  const freshPlayer=(i,name=`Pemain ${i+1}`)=>({name,color:COLORS[i],location:{type:'start',startId:`start-${i}`},playerStartIndex:i,points:0,finalDone:false,mcDone:false,challengeDone:false});
+  let players=COLORS.map((_,i)=>freshPlayer(i)),playerCount=6,active=0;
+  let diceValue=null,isRolling=false,isMoving=false,missionPending=false,selectedCategory='';
+  let missionPhase='idle',wheelRotation=0,isSpinning=false,activeCard=null,activeCardType='';
+  let cardAnswered=false,retryUsed=false,turnAdvanceLocked=false,lastAnswerCorrect=false;
+  const reflection={feel:'',learn:'',change:'',apply:''};
+  const activePlayers=()=>players.slice(0,playerCount);
+  const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+
+  function openModal(id){
+    const element=$(id);element.classList.add('open');element.setAttribute('aria-hidden','false');
+    if(id==='score-modal')renderFullScores();
+    if(id==='final-modal')renderFinalPlayers();
+    if(id==='reflection-modal')Object.keys(reflection).forEach(key=>$(key).value=reflection[key]);
+    element.querySelector('.close-modal,button')?.focus();
+  }
+  function closeModal(id){const element=$(id);element.classList.remove('open');element.setAttribute('aria-hidden','true')}
+  function go(id){document.querySelectorAll('.screen').forEach(el=>el.classList.toggle('active',el.id===id));document.querySelectorAll('.nav-btn').forEach(el=>el.classList.toggle('active',el.dataset.go===id))}
+  document.querySelectorAll('[data-go]').forEach(el=>el.addEventListener('click',()=>go(el.dataset.go)));
+  document.querySelectorAll('[data-modal]').forEach(el=>el.addEventListener('click',()=>openModal(el.dataset.modal)));
+  document.querySelectorAll('[data-close]').forEach(el=>el.addEventListener('click',()=>closeModal(el.dataset.close)));
+  document.querySelectorAll('.modal').forEach(el=>el.addEventListener('click',event=>{if(event.target===el)closeModal(el.id)}));
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'){const open=document.querySelector('.modal.open');if(open)closeModal(open.id)}});
+
+  function setDice(value=6,rolling=false){
+    const pips={1:[4],2:[0,8],3:[0,4,8],4:[0,2,6,8],5:[0,2,4,6,8],6:[0,2,3,5,6,8]};
+    $('dice-result').classList.toggle('rolling',rolling);
+    [...$('dice-result').children].forEach((pip,i)=>pip.classList.toggle('show',pips[value].includes(i)));
+    $('dice-result').setAttribute('aria-label',`Dadu menunjukkan ${value}`);
+  }
+  function updateControls(){
+    $('roll-button').disabled=turnAdvanceLocked||isRolling||isMoving||missionPending||diceValue!==null||activePlayers()[active]?.finalDone;
+    $('move-button').disabled=turnAdvanceLocked||isRolling||isMoving||missionPending||diceValue===null;
+    $('skip-button').disabled=turnAdvanceLocked||isRolling||isMoving;
+    $('spin-button').disabled=isSpinning||!missionPending||missionPhase!=='wheel';
+  }
+  function renderCount(){
+    const select=$('player-count');select.replaceChildren();
+    for(let n=2;n<=6;n++)select.add(new Option(`${n} pemain`,n));
+    select.value=playerCount;renderNames();
+  }
+  function renderNames(){
+    $('name-fields').replaceChildren();
+    activePlayers().forEach((player,i)=>{
+      const wrapper=document.createElement('div'),label=document.createElement('label'),input=document.createElement('input');
+      label.className='text-xs font-bold';label.htmlFor=`player-name-${i}`;label.textContent=`Pemain ${i+1}`;
+      input.id=label.htmlFor;input.className='input-control mt-1';input.maxLength=24;input.value=player.name;
+      wrapper.append(label,input);$('name-fields').append(wrapper);
+    });
+  }
+  function coordinate(angle){const a=angle*Math.PI/180;return[50+47.5*Math.cos(a),50+47.5*Math.sin(a)]}
+  function pawnCoordinate(player){
+    const start=player.location.type==='start';
+    const mates=activePlayers().filter(other=>start
+      ?other.location.type==='start'&&other.location.startId===player.location.startId
+      :other.location.type==='track'&&other.location.trackIndex===player.location.trackIndex);
+    const offsets=[[0,0],[-1.3,-1.3],[1.3,-1.3],[-1.3,1.3],[1.3,1.3],[0,2]];
+    const offset=offsets[mates.indexOf(player)]||[0,0];
+    const base=coordinate(start?START_ANGLES[player.playerStartIndex]:trackCells[player.location.trackIndex]?.angle??0);
+    return[base[0]+offset[0],base[1]+offset[1]];
+  }
+  function renderBoard(){
+    const board=$('game-board');board.querySelectorAll('.space,.pawn').forEach(el=>el.remove());
+    trackCells.forEach(cell=>{
+      const el=document.createElement('div'),[left,top]=coordinate(cell.angle),label=cardLabels[cell.index%3];
+      el.className=`space ${cell.type==='challenge'?'mission':''}`;el.style.left=`${left}%`;el.style.top=`${top}%`;
+      el.textContent=cell.type==='challenge'?label:String(cell.index+1);
+      el.setAttribute('aria-label',cell.type==='challenge'?`Petak kartu ${label}`:`Petak ${cell.index+1}`);
+      board.append(el);
+    });
+    START_ANGLES.forEach((angle,i)=>{
+      const el=document.createElement('div'),[left,top]=coordinate(angle);
+      el.className='space start-space';el.style.left=`${left}%`;el.style.top=`${top}%`;
+      el.style.background=COLORS[i];el.textContent='START';board.append(el);
+    });
+    activePlayers().forEach((player,i)=>{
+      const el=document.createElement('div'),[left,top]=pawnCoordinate(player);
+      el.className=`pawn${i===active?' active-pawn':''}`;
+      el.style.left=`${left}%`;el.style.top=`${top}%`;el.style.background=player.color;
+      el.setAttribute('aria-label',`Pion ${player.name}`);
+      const head=document.createElement('span'),body=document.createElement('span'),number=document.createElement('span');
+      head.className='pawn-head';body.className='pawn-body';number.className='pawn-number';number.textContent=String(i+1);
+      el.append(head,body,number);board.append(el);
+    });
+  }
+  function scoreElement(player){
+    const row=document.createElement('div'),name=document.createElement('span'),score=document.createElement('strong');
+    row.className='score-row';row.style.setProperty('--row',`${player.color}22`);
+    name.textContent=`● ${player.name}${player.finalDone?' · FINISH':''}`;score.textContent=`${player.points} poin`;
+    row.append(name,score);return row;
+  }
+  function renderSide(){
+    const turns=$('turn-order'),scores=$('scoreboard');turns.replaceChildren();scores.replaceChildren();
+    activePlayers().forEach((player,i)=>{
+      const chip=document.createElement('div');chip.className=`turn-chip${i===active?' active':''}`;
+      chip.textContent=`${i+1}. ${player.name}`;chip.title=player.name;
+      turns.append(chip);scores.append(scoreElement(player));
+    });
+    $('active-player').textContent=activePlayers()[active]?.name||'—';
+    renderBoard();updateControls();
+  }
+  function renderFullScores(){$('full-scoreboard').replaceChildren(...activePlayers().map(scoreElement))}
+  function renderFinalPlayers(){
+    const select=$('final-player');select.replaceChildren();
+    activePlayers().forEach((player,i)=>select.add(new Option(`${player.name}${player.finalDone?' — selesai':''}`,i)));
+  }
+  function nextTurn(){
+    if(turnAdvanceLocked)return;
+    turnAdvanceLocked=true;active=(active+1)%playerCount;diceValue=null;missionPending=false;
+    setDice();$('turn-message').textContent=`Giliran ${activePlayers()[active].name}. Lempar dadu saat siap.`;
+    turnAdvanceLocked=false;renderSide();
+  }
+  async function rollDice(){
+    if($('roll-button').disabled)return;
+    isRolling=true;updateControls();
+    for(let i=0;i<9;i++){setDice(1+Math.floor(Math.random()*6),true);await sleep(85)}
+    diceValue=1+Math.floor(Math.random()*6);isRolling=false;setDice(diceValue);
+    $('turn-message').textContent=`${activePlayers()[active].name} mendapat angka ${diceValue}. Gerakkan pion.`;
+    updateControls();
+  }
+  async function movePawn(){
+    if($('move-button').disabled)return;
+    isMoving=true;updateControls();
+    const player=activePlayers()[active],steps=diceValue;
+    for(let i=0;i<steps;i++){
+      const current=player.location.type==='start'?player.playerStartIndex*9-1:player.location.trackIndex;
+      player.location={type:'track',trackIndex:(current+1)%TOTAL_TRACK};
+      renderSide();await sleep(230);
+    }
+    isMoving=false;diceValue=null;setDice();
+    if(trackCells[player.location.trackIndex].type==='challenge'){
+      activeCardType=cardLabels[player.location.trackIndex%3];openMission();
+    }else{
+      $('turn-message').textContent=`${player.name} berhenti di petak biasa.`;
+      await sleep(500);nextTurn();
+    }
+  }
+  function setMissionPhase(phase){
+    missionPhase=phase;
+    $('mission-phase-label').textContent=phase==='wheel'?'Tahap 1: Putar roda untuk memilih kategori.':phase==='choose'?'Tahap 2: Pilih jenis kartu.':'';
+    $('spin-button').classList.toggle('hidden',phase!=='wheel');
+    $('card-type-choices').classList.toggle('hidden',phase!=='choose');
+    updateControls();
+  }
+  function openMission(){
+    missionPending=true;selectedCategory='';setMissionPhase('wheel');
+    $('wheel-result').textContent='Putar roda untuk memilih kategori.';
+    renderSide();openModal('wheel-modal');
+  }
+  function activateCard(type){
+    setMissionPhase('card');closeModal('wheel-modal');
+    activeCard=null;cardAnswered=false;retryUsed=false;
+    if(type==='challenge'){
+      $('challenge-category').textContent=`Kategori roda: ${selectedCategory}`;
+      $('challenge-text').textContent=challengeBank[selectedCategory];
+      $('challenge-status').textContent='Setelah simulasi, fasilitator dapat memberi penguatan atau kesempatan mencoba kembali.';
+      $('challenge-finish').classList.add('hidden');openModal('challenge-modal');return;
+    }
+    activeCard=(type==='mc'?mcBank:tfBank).find(card=>card.category===selectedCategory);
+    if(type==='mc'){renderMC();openModal('mc-modal')}else{renderTF();openModal('tf-modal')}
+  }
+  function renderMC(){
+    $('mc-feedback').classList.add('hidden');$('mc-continue').classList.add('hidden');
+    $('mc-category').textContent=`Kategori roda: ${activeCard.category}`;
+    $('mc-question').textContent=activeCard.question;
+    $('mc-options').replaceChildren();
+    activeCard.options.forEach((text,i)=>{
+      const button=document.createElement('button'),answer=String.fromCharCode(65+i);
+      button.className='option';button.type='button';button.textContent=`${answer}. ${text}`;
+      button.addEventListener('click',()=>answerCard(answer,button));$('mc-options').append(button);
+    });
+  }
+  function renderTF(){
+    $('tf-statement').textContent=activeCard.statement;
+    $('tf-feedback').classList.add('hidden');$('tf-finish').classList.add('hidden');
+  }
+  function answerCard(answer,button){
+    if(cardAnswered||!missionPending||!activeCard)return;
+    cardAnswered=true;const correct=answer===activeCard.key,player=activePlayers()[active];
+    lastAnswerCorrect=correct;
+    button.classList.add(correct?'selected-correct':'selected-wrong');
+    const feedback=activeCard.options?$('mc-feedback'):$('tf-feedback');
+    feedback.textContent=`${correct?'Jawaban kamu benar!':'Jawaban kamu belum tepat. Yuk, pelajari jawabannya!'} ${activeCard.explanation}`;
+    feedback.classList.remove('hidden');
+    $(activeCard.options?'mc-continue':'tf-finish').classList.remove('hidden');
+    if(correct&&!player.mcDone){player.points++;player.mcDone=true}
+    renderSide();
+  }
+  function continueAnswer(){
+    if(!missionPending||!cardAnswered)return;
+    if(activeCard&&!lastAnswerCorrect&&!retryUsed){
+      retryUsed=true;cardAnswered=false;
+      if(activeCard.options)renderMC();else renderTF();
+      return;
+    }
+    finishMission();
+  }
+  function finishMission(){
+    if(!missionPending)return;
+    ['wheel-modal','mc-modal','tf-modal','challenge-modal'].forEach(closeModal);
+    activeCard=null;activeCardType='';missionPending=false;cardAnswered=false;nextTurn();
+  }
+
+  $('player-count').addEventListener('change',event=>{playerCount=Number(event.target.value);renderNames();renderSide()});
+  $('setup-form').addEventListener('submit',event=>{
+    event.preventDefault();
+    activePlayers().forEach((player,i)=>player.name=$(`player-name-${i}`).value.trim()||`Pemain ${i+1}`);
+    active=0;renderSide();go('board');
+  });
+  $('roll-button').addEventListener('click',rollDice);
+  $('move-button').addEventListener('click',movePawn);
+  $('skip-button').addEventListener('click',()=>{if(isRolling||isMoving||turnAdvanceLocked)return;if(missionPending)finishMission();else nextTurn()});
+  $('spin-button').addEventListener('click',async()=>{
+    if(isSpinning||!missionPending||missionPhase!=='wheel')return;
+    isSpinning=true;updateControls();
+    const index=Math.floor(Math.random()*6),target=index*60+30,current=((wheelRotation%360)+360)%360,desired=(((-target)%360)+360)%360;
+    wheelRotation+=1440+((desired-current+360)%360);
+    $('skill-wheel').style.transform=`rotate(${wheelRotation}deg)`;
+    await sleep(4550);selectedCategory=categories[index];isSpinning=false;
+    $('wheel-result').textContent=`Kategori terpilih: ${selectedCategory}`;setMissionPhase('choose');
+  });
+  [['choose-mc','mc','PG'],['choose-tf','tf','B/S'],['choose-challenge','challenge','T']].forEach(([id,type,required])=>{
+    $(id).addEventListener('click',()=>{if(missionPhase==='choose'&&activeCardType===required)activateCard(type)});
+  });
+  $('tf-true').addEventListener('click',()=>answerCard(true,$('tf-true')));
+  $('tf-false').addEventListener('click',()=>answerCard(false,$('tf-false')));
+  $('mc-continue').addEventListener('click',continueAnswer);
+  $('tf-finish').addEventListener('click',continueAnswer);
+  $('challenge-success').addEventListener('click',()=>{
+    if(!missionPending)return;
+    const player=activePlayers()[active];
+    if(!player.challengeDone){player.points+=2;player.challengeDone=true}
+    $('challenge-status').textContent='Usaha sesuai tercatat: +2 poin.';
+    $('challenge-finish').classList.remove('hidden');renderSide();
+  });
+  $('challenge-retry').addEventListener('click',()=>{
+    if(!missionPending)return;
+    retryUsed=true;
+    $('challenge-status').textContent='Terima masukan kelompok atau fasilitator, lalu coba tantangan yang sama sekali lagi.';
+    $('challenge-finish').classList.remove('hidden');
+  });
+  $('challenge-finish').addEventListener('click',finishMission);
+  $('final-complete').addEventListener('click',()=>{
+    const player=activePlayers()[Number($('final-player').value)];if(!player)return;
+    player.finalDone=true;$('final-message').textContent=`${player.name} telah menyelesaikan tantangan akhir.`;
+    renderSide();renderFinalPlayers();
+  });
+  $('reflection-form').addEventListener('submit',event=>{
+    event.preventDefault();Object.keys(reflection).forEach(key=>reflection[key]=$(key).value);
+    $('reflection-message').textContent='Refleksi tersimpan selama sesi halaman ini di perangkat ini; tidak tersinkronisasi.';
+  });
+  $('reset-open').addEventListener('click',()=>openModal('reset-modal'));
+  $('reset-confirm').addEventListener('click',()=>{
+    playerCount=6;active=0;players=COLORS.map((_,i)=>freshPlayer(i));
+    diceValue=null;isRolling=false;isMoving=false;missionPending=false;activeCard=null;activeCardType='';
+    Object.keys(reflection).forEach(key=>reflection[key]='');
+    renderCount();setDice();renderSide();closeModal('reset-modal');go('home');
+    $('turn-message').textContent='Giliran Pemain 1. Lempar dadu saat siap.';
+  });
+  categories.forEach(category=>{
+    const label=document.createElement('span');label.className='wheel-label';
+    label.textContent=category;label.setAttribute('aria-hidden','true');$('skill-wheel').append(label);
+  });
+
+  // Source yang diaudit tidak memiliki inisialisasi atau kontrak operasi Firebase.
+  // Diagnostik tidak menebak path dan tidak mengirim request ke database.
+  const diagnosticChecks=[
+    ['config','Konfigurasi databaseURL'],
+    ['database','Inisialisasi Realtime Database'],
+    ['auth','Firebase Anonymous Auth dan UID'],
+    ['read','Koneksi / read pada path yang digunakan game'],
+    ['signIn','Sign-in anonim nyata'],
+    ['room','Create-room dan read-back'],
+    ['listener','Listener realtime dan cleanup'],
+    ['rules','Pemeriksaan Security Rules']
+  ];
+  const diagnosticRows=new Map();
+  for(const [key,title] of diagnosticChecks){
+    const row=document.createElement('div'),heading=document.createElement('strong'),state=document.createElement('span'),message=document.createElement('p');
+    row.className='diagnostic-row';heading.textContent=title;state.className='diagnostic-state';
+    row.append(heading,state,message);$('diagnostic-results').append(row);
+    diagnosticRows.set(key,{state,message});
+  }
+  function report(key,status,message){
+    const row=diagnosticRows.get(key);
+    row.state.dataset.state=status;row.state.textContent=status;
+    row.message.textContent=message;
+  }
+  function resetDiagnostics(){
+    for(const [key] of diagnosticChecks)report(key,'BELUM DIUJI','Belum ada tes runtime pada perangkat ini.');
+  }
+  function validDatabaseURL(value){
+    try{
+      const parsed=new URL(value);
+      return parsed.protocol==='https:'&&Boolean(parsed.hostname)&&!parsed.username&&!parsed.password;
+    }catch{return false}
+  }
+  let diagnosticsRunning=false;
+  const sanitizeDiagnostic=value=>String(value||'').replace(/(apiKey|auth|token|secret|password|key)\s*[:=]\s*[^,;\s]+/gi,'$1=[disamarkan]').replace(/https?:\/\/[^\s)]+/gi,'[URL disamarkan]').replace(/\b[A-Za-z0-9_-]{20,}\b/g,'[nilai disamarkan]');
+  const diagnosticButtons=['run-diagnostics','test-config','test-auth','test-database','test-read','test-room'];
+  function diagnosticStamp(){ $('diagnostic-time').textContent=`Waktu tes perangkat ini: ${new Intl.DateTimeFormat('id-ID',{dateStyle:'medium',timeStyle:'medium'}).format(new Date())}` }
+  function runtimeFirebase(){return window.firebase||null}
+  async function testConfig(){
+    const runtimeConfig=window.__TEMAN_CONFIG__||window.temanConfig||{},firebaseConfig=runtimeConfig.firebaseConfig||runtimeConfig.firebase||{},url=typeof firebaseConfig.databaseURL==='string'?firebaseConfig.databaseURL.trim():'';
+    if(!url){report('config','BELUM DIUJI','Konfigurasi aktual tidak menyediakan databaseURL. Isi konfigurasi Firebase yang digunakan source.');return false}
+    if(!validDatabaseURL(url)){report('config','GAGAL','databaseURL tersedia tetapi format HTTPS tidak valid. Nilai lengkap disembunyikan.');return false}
+    const host=new URL(url).hostname;report('config','BERHASIL',`databaseURL terdeteksi pada host tersamar: ${host.slice(0,3)}…${host.slice(-10)}`);return true;
+  }
+  async function testAuth(){
+    const fb=runtimeFirebase();if(!fb||!fb.auth){report('auth','BELUM DIUJI','Firebase Auth tidak ditemukan pada source/runtime; Anonymous Authentication belum dapat dijalankan.');return false}
+    try{const auth=fb.auth(),user=auth.currentUser|| (await auth.signInAnonymously()).user;if(!user)throw new Error('currentUser tidak tersedia');report('auth','BERHASIL',`Anonymous Authentication aktif; UID tersamar: ${String(user.uid).slice(0,4)}…${String(user.uid).slice(-4)}`);return true}catch(error){report('auth','GAGAL',sanitizeDiagnostic(error.code||error.message));return false}
+  }
+  async function testDatabase(){const fb=runtimeFirebase();if(!fb||!fb.database){report('database','BELUM DIUJI','Firebase Realtime Database tidak ditemukan pada source/runtime.');return false}try{const db=fb.database();if(!db)throw new Error('instance database tidak tersedia');report('database','BERHASIL','Instance Realtime Database berhasil diperoleh dari konfigurasi runtime.');return true}catch(error){report('database','GAGAL',sanitizeDiagnostic(error.code||error.message));return false}}
+  async function testRead(){report('read','BELUM DIUJI','Path baca yang benar-benar dipakai source tidak ditemukan; tidak ada operasi read yang dikirim.');return false}
+  async function testRoom(){report('room','BELUM DIUJI','createRoom, struktur payload/path, read-back, dan cleanup aman tidak ditemukan; tidak ada ruang diagnostik dibuat.');return false}
+  async function runOne(key){$('diagnostic-time').textContent='Tes sedang berjalan…';await sleep(0);diagnosticStamp();if(key==='config')return testConfig();if(key==='auth')return testAuth();if(key==='database')return testDatabase();if(key==='read')return testRead();return testRoom()}
+  async function runDiagnostics(){if(diagnosticsRunning)return;diagnosticsRunning=true;diagnosticButtons.forEach(id=>$(id).disabled=true);resetDiagnostics();for(const key of ['config','auth','database','read','room']){await runOne(key)}$('diagnostic-connection').textContent='Koneksi database: hasil runtime ditampilkan di daftar tes.';$('diagnostic-auth').textContent='Autentikasi: hasil runtime ditampilkan di daftar tes.';diagnosticsRunning=false;diagnosticButtons.forEach(id=>$(id).disabled=false)}
+  $('run-diagnostics').addEventListener('click',runDiagnostics);
+  [['test-config','config'],['test-auth','auth'],['test-database','database'],['test-read','read'],['test-room','room']].forEach(([id,key])=>$(id).addEventListener('click',()=>{if(!diagnosticsRunning){diagnosticsRunning=true;diagnosticButtons.forEach(button=>$(button).disabled=true);runOne(key).finally(()=>{diagnosticsRunning=false;diagnosticButtons.forEach(button=>$(button).disabled=false)})}}));
+  function showOnline(){
+    $('setup-form').classList.add('hidden');$('online-lobby').classList.remove('hidden');
+    $('mode-message').textContent='Pemeriksaan multiplayer dibuka. Mode satu perangkat tetap aktif.';
+    $('lobby-error').textContent='';
+  }
+  $('mode-online').addEventListener('click',showOnline);
+  $('mode-local').addEventListener('click',()=>{
+    $('setup-form').classList.remove('hidden');$('online-lobby').classList.add('hidden');
+    $('mode-message').textContent='Mode satu perangkat aktif.';
+  });
+  $('create-room').addEventListener('click',()=>{
+    $('lobby-error').textContent='Ruang belum dibuat. Audit source menemukan: SDK Firebase tidak dimuat, firebaseConfig/databaseURL tidak tersedia, Auth dan Realtime Database belum diinisialisasi, serta createRoom, schema/path room, dan aturan akses belum ada. Tidak ada write yang dikirim.';
+  });
+  $('join-form').addEventListener('submit',event=>{
+    event.preventDefault();
+    const code=$('room-code').value.trim().toUpperCase();
+    $('lobby-error').textContent=!/^[A-HJ-NP-Z2-9]{8}$/.test(code)
+      ?'Kode ruang harus berisi delapan karakter yang valid. Tidak ada permintaan dikirim.'
+      :'Ruang belum digabung. Audit source menemukan SDK Firebase, konfigurasi, Auth, Database, joinRoom, schema/path room, listener, dan aturan akses belum tersedia. Tidak ada read atau write yang dikirim.';
+  });
+
+  resetDiagnostics();renderCount();setDice();renderSide();
+  $('turn-message').textContent='Giliran Pemain 1. Lempar dadu saat siap.';
+})();
+</script>
+ 
+</body></html>
