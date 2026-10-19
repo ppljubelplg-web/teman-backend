@@ -1,7 +1,7 @@
 
 const { setGlobalOptions } = require("firebase-functions");
 const { onRequest } = require("firebase-functions/https");
-const { initializeApp, getApps } = require("firebase-admin/app");
+const { initializeApp, getApps, cert } = require("firebase-admin/app");
 const { getAuth } = require("firebase-admin/auth");
 const { getDatabase } = require("firebase-admin/database");
 const { randomBytes } = require("node:crypto");
@@ -15,7 +15,10 @@ const databaseURL = emulatorHost
 
 const app = getApps().length
   ? getApps()[0]
-  : initializeApp({ databaseURL });
+ : initializeApp({
+    credential: cert(JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_JSON)),
+    databaseURL
+  });
 
 const auth = getAuth(app);
 const db = getDatabase(app);
